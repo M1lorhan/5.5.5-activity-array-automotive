@@ -15,7 +15,7 @@ class Car extends VehicleModule {
     }
 }
 
-loadPassenger(num) {
+function loadPassenger(num) {
     if (this.passengers < this.maximumPassengers) {
             return availableRoom;
     }else {
@@ -23,7 +23,7 @@ loadPassenger(num) {
     }
 }
 
-start(){
+function start(){
     if (this.fuel > 0) {
         console.log(this.name + "has started");
     }else {
@@ -31,7 +31,7 @@ start(){
     }
 }
 
-scheduledService(){
+function scheduledService(){
     if (this.mileage > 30000) {
         console.log('time for maintenance')
     }return this.scheduleService;
